@@ -111,10 +111,12 @@ contract staking_erc_to_nft is
         if (difference > rewardOf.stakedDuration) {
             //Actual amount if duration is met
             uint256 Reward = (rewardOf.rate * rewardOf.amount) / 100;
+            
             addTOreward[_person] = Reward;
         } else {
+            uint256 ActualReward = (rewardOf.rate * rewardOf.amount) / 100;
             //Reduced amount if duration is not met
-            uint256 Reward = ((rewardOf.rate * rewardOf.amount) * 40) / 10000;
+            uint256 Reward = (ActualReward*40) / 100;
             addTOreward[_person] = Reward;
         }
         return addTOreward[_person];
