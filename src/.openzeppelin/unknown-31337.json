@@ -8,47 +8,77 @@
     },
     {
       "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
-      "txHash": "0x33c0b557485ebb4a96f0c9b9ccdfbcb74f8f753804d82c1c25568da860855b0a",
+      "txHash": "0xa7d56cceca0474ae69053e39999c241360385817f2bf58dd6ffae569a90d3bf3",
       "kind": "uups"
     },
     {
       "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
-      "txHash": "0x79e77c9f05bac309b6dd07d555a85d03e89f134db4a4154ef21f6d0113b6825d",
+      "txHash": "0xb0dc20235a00f1703c8ae4f9913cc928cd651eb054b68254df7d68e9f884e434",
       "kind": "uups"
     },
     {
       "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
-      "txHash": "0x4b8df60b2c3e25248b1a587768ecdda0796d53da8489eb6e722206fb477d9acb",
+      "txHash": "0x57cae30fdd3fabf03dbcbcf91629993b3ff5e79a9006eedab5eb3c41499cd1f6",
       "kind": "uups"
     },
     {
       "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
-      "txHash": "0xc8fa4afe6d63006ba6c298fbbd42f4efbb7565f670d12c01fa0dd035f6435544",
+      "txHash": "0x0e1a29d1bd8ec6aa4d90ec32ddc3c40e34e8841b5839793723db22d3918c0fc2",
       "kind": "uups"
     },
     {
       "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
-      "txHash": "0xf028455b176810c5b503890cbee1db834e9f76c2fd4ab5df3fa9a5899ed15002",
+      "txHash": "0x6a837686e42be7e0673cf8fa8f5147ae26e9ea64c673bf8d4ac96f944c6412a7",
       "kind": "uups"
     },
     {
       "address": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
-      "txHash": "0x70c08d9004c8db8a75f851ea3cea4b3c9ce00dffbcc653e7c2b308a7e3dd32a6",
+      "txHash": "0xb88af1ce0c9d85b6291241f77da7a697c21e211de22a515544ea37581e9e2900",
       "kind": "uups"
     },
     {
       "address": "0x610178dA211FEF7D417bC0e6FeD39F05609AD788",
-      "txHash": "0xc7d654be9c52a3fff1a01d3f2120a1cc9e7c2492b8bb0f30aff55d8b6635e020",
+      "txHash": "0x064e9a2dde40b34f7a811502c3a3f19fddf2943f68aaa7f2772091528759728b",
       "kind": "uups"
     },
     {
       "address": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
-      "txHash": "0x9303912bc40e4c0744c96ddf386e5d9fedf0fdcc902a0ac3fc6be2fef24f6886",
+      "txHash": "0x931de3cdb135fb606c98fa6a1b19b75e8117c0e43d4f14f2afc7cdb779d3370e",
       "kind": "uups"
     },
     {
       "address": "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0",
-      "txHash": "0xb0559f99846400dff80d77c1bbf7e9681d7fe421e27b2f5edf1c27f775bd4c28",
+      "txHash": "0x9f9f5f69d3488f598fcab44c542be889ad1a93391358c7818d7c6824c9073b00",
+      "kind": "uups"
+    },
+    {
+      "address": "0x0B306BF915C4d645ff596e518fAf3F9669b97016",
+      "txHash": "0xd176be23778e83a966b9a0a95308e1c12940f34315d20a3e90566b926da37967",
+      "kind": "uups"
+    },
+    {
+      "address": "0x959922bE3CAee4b8Cd9a407cc3ac1C251C2007B1",
+      "txHash": "0xdcbfb4fa9da7149c362e38297b029f8317683ef99f17dd2656069dad852e92c0",
+      "kind": "uups"
+    },
+    {
+      "address": "0x68B1D87F95878fE05B998F19b66F4baba5De1aed",
+      "txHash": "0xfdc02f7f26d889c2c58f7dc936b74d210440635d238891916320588702aa03c2",
+      "kind": "uups"
+    },
+    {
+      "address": "0x3Aa5ebB10DC797CAC828524e59A333d0A371443c",
+      "txHash": "0x51bce64feda3be9d437f2f1bf7c89bc356a72fad3e27b9d240c8d2f5f81f9472",
+      "kind": "uups"
+    },
+    {
+      "address": "0x59b670e9fA9D0A427751Af201D676719a970857b",
+      "txHash": "0x364804861dc9ec05b7815ff3060d74939f7e97289d61f6d6b25c927ab7493dff",
+      "kind": "uups"
+    },
+    {
+      "address": "0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1",
+      "txHash": "0x57ad0ec620f1404064659512a355176821c8836909b53ca37e37a160091fc15b",
       "kind": "uups"
     }
   ],
@@ -208,9 +238,9 @@
         }
       }
     },
-    "16c080c0af87b8d074f2d46bb39b44b12f3e403d44f6027ac707b371368fbdb7": {
+    "603f3d28adb6a506478a9ffc974f1125ccd6b3029c9689aa4edd44b897261930": {
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
-      "txHash": "0x4c6de1838daa34d5d7d81cc9fdd832492403db89dc39b15098a57a97bd2b1087",
+      "txHash": "0x1b90d4a20bd2144d9ba6ab8cfbd4482e1cd403f0930996faba148739c3663396",
       "layout": {
         "storage": [
           {
@@ -340,31 +370,23 @@
             "slot": "301",
             "type": "t_uint256",
             "contract": "staking_erc_to_nft",
-            "src": "contracts\\staking_erc_to_nft.sol:32"
-          },
-          {
-            "label": "ENTERED",
-            "offset": 0,
-            "slot": "302",
-            "type": "t_bool",
-            "contract": "staking_erc_to_nft",
-            "src": "contracts\\staking_erc_to_nft.sol:33"
+            "src": "contracts\\staking_erc_to_nft.sol:40"
           },
           {
             "label": "token",
-            "offset": 1,
+            "offset": 0,
             "slot": "302",
-            "type": "t_contract(Imytoken)3185",
+            "type": "t_contract(Imytoken)2556",
             "contract": "staking_erc_to_nft",
-            "src": "contracts\\staking_erc_to_nft.sol:34"
+            "src": "contracts\\staking_erc_to_nft.sol:41"
           },
           {
             "label": "addToStake",
             "offset": 0,
             "slot": "303",
-            "type": "t_mapping(t_address,t_struct(Stake)3206_storage)",
+            "type": "t_mapping(t_address,t_struct(Stake)2577_storage)",
             "contract": "staking_erc_to_nft",
-            "src": "contracts\\staking_erc_to_nft.sol:55"
+            "src": "contracts\\staking_erc_to_nft.sol:63"
           },
           {
             "label": "addTOreward",
@@ -372,7 +394,7 @@
             "slot": "304",
             "type": "t_mapping(t_address,t_uint256)",
             "contract": "staking_erc_to_nft",
-            "src": "contracts\\staking_erc_to_nft.sol:56"
+            "src": "contracts\\staking_erc_to_nft.sol:64"
           },
           {
             "label": "stakeholder",
@@ -380,7 +402,7 @@
             "slot": "305",
             "type": "t_array(t_address)dyn_storage",
             "contract": "staking_erc_to_nft",
-            "src": "contracts\\staking_erc_to_nft.sol:57"
+            "src": "contracts\\staking_erc_to_nft.sol:65"
           }
         ],
         "types": {
@@ -408,7 +430,7 @@
             "label": "bool",
             "numberOfBytes": "1"
           },
-          "t_contract(Imytoken)3185": {
+          "t_contract(Imytoken)2556": {
             "label": "contract Imytoken",
             "numberOfBytes": "20"
           },
@@ -424,7 +446,7 @@
             "label": "mapping(address => mapping(address => bool))",
             "numberOfBytes": "32"
           },
-          "t_mapping(t_address,t_struct(Stake)3206_storage)": {
+          "t_mapping(t_address,t_struct(Stake)2577_storage)": {
             "label": "mapping(address => struct staking_erc_to_nft.Stake)",
             "numberOfBytes": "32"
           },
@@ -440,7 +462,7 @@
             "label": "string",
             "numberOfBytes": "32"
           },
-          "t_struct(Stake)3206_storage": {
+          "t_struct(Stake)2577_storage": {
             "label": "struct staking_erc_to_nft.Stake",
             "members": [
               {
