@@ -16,6 +16,7 @@ describe("Token Contract", async () => {
     erc20 = await upgrades.deployProxy(Erc20, { kind: "uups" })
     await erc20.deployed();
     erc20_address = erc20.address;
+    console.log(erc20_address)
     Nft = await ethers.getContractFactory("staking_erc_to_nft");
     nft = await upgrades.deployProxy(Nft, [erc20_address], { kind: 'uups' });
     await nft.deployed();
