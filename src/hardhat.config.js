@@ -14,13 +14,19 @@ require("dotenv").config()
 module.exports = {
   solidity: "0.8.15",
   networks:{
-    mumbai:{
-      url:process.env.REACT_APP_url,
-      accounts:[process.env.REACT_APP_key],
+    // mumbai:{
+    //   url:process.env.REACT_APP_url,
+    //   accounts:[process.env.REACT_APP_key],
       
+    // },
+    rinkeby:{
+      url:process.env.REACT_APP_url_rinkeby,
+      accounts:[process.env.REACT_APP_key_rinkeby]
     }
   },
+  
   etherscan:{
-    apiKey:process.env.REACT_APP_apikey,
+    apiKey:process.env.REACT_APP_apikey_rinkeby,
+
   }
 };
