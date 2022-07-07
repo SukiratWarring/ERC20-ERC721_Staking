@@ -5,6 +5,8 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol";
+
 
 interface Imytoken {
     function mintfortoken(address to, uint256 amount) external;
@@ -20,7 +22,8 @@ contract staking_erc_to_nft is
     Initializable,
     UUPSUpgradeable,
     ERC721Upgradeable,
-    OwnableUpgradeable
+    OwnableUpgradeable,
+    KeeperCompatibleInterface
 {
     //NFT information
     struct Stake {
@@ -33,15 +36,18 @@ contract staking_erc_to_nft is
     }
 
     //function to mint
-    function mint_ex(address _to, uint256 _amount) external {
+    function mint_ex(address _to, uint256 _amount) external onlyOwner {
         token.mintfortoken(_to, _amount);
     }
 
     uint256 TOKEN_ID;
     Imytoken token;
+        //Chain link keeper state variables
+    uint public  interval;
+    uint public lastTimeStamp;
 
     //Run the initialise function
-    function initialize(address _token_contract) public initializer {
+    function initialize(address _token_contract,uint updateInterval) public initializer {
         //Add address of the newly deployed Warin contract
         token = Imytoken(_token_contract);
         TOKEN_ID = 1;
@@ -49,7 +55,29 @@ contract staking_erc_to_nft is
         __Ownable_init();
         __UUPSUpgradeable_init();
         //minting tokens for the address
-        token.mintfortoken(_msgSender(), 100000000);
+        //initialising parameters for Chainlink 
+        interval = updateInterval;
+        lastTimeStamp = block.timestamp;
+
+        token.mintfortoken(_msgSender(), 1**18);
+
+    }
+    
+    //chainlink upkeep
+    function checkUpkeep(bytes calldata checkData) external override view returns(bool upkeepNeeded,bytes memory performData){
+        upkeepNeeded = (block.timestamp - lastTimeStamp) > interval;
+        performData=checkData;
+    }
+    function performUpkeep(bytes calldata performData ) external override {
+        if ((block.timestamp - lastTimeStamp) > interval ) {
+            lastTimeStamp = block.timestamp;
+            for(uint i=0;i<stakeholder.length;i++){
+                address fetchedAddress=stakeholder[i];
+                addTOreward[fetchedAddress]+=100;
+            }
+
+        }
+        performData;
     }
 
     //UUPS
