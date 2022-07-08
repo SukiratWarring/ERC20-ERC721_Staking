@@ -15,7 +15,9 @@ interface Imytoken {
 
     function initialize() external;
 
-    function balanceOf(address account) external returns (uint256);
+    function balanceOf(address account) view external returns (uint256);
+
+    function transfer(address _to,uint amount) external returns(bool);
 }
 
 contract staking_erc_to_nft is
@@ -59,7 +61,7 @@ contract staking_erc_to_nft is
         interval = updateInterval;
         lastTimeStamp = block.timestamp;
 
-        token.mintfortoken(_msgSender(), 1**18);
+        token.mintfortoken(_msgSender(), 1**18);//EDIT this will only mint 1 Warin TOKEN
 
     }
     
@@ -86,6 +88,14 @@ contract staking_erc_to_nft is
         override
         onlyOwner
     {}
+    //Balance OF ERC-20
+    function displayBalanceOF(address _of) view public returns(uint){
+        return token.balanceOf(_of);
+    }
+    //TRANSFER ERC20 tokens
+    function transferTokens(address _to,uint _amount) public {
+        token.transfer(_to,_amount);
+    }
 
     //mapping
     mapping(address => Stake) public addToStake;
