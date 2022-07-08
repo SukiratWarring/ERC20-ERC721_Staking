@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Flex, Spacer, Box, Heading, Button } from '@chakra-ui/react';
-import Errormsg from './Errormsg';
+// import Errormsg from './Errormsg';
 
 
 function Header() {
@@ -29,7 +29,7 @@ function Header() {
       <Button size={"lg"} colorScheme={"orange"} color={"black"} onClick={btnhandler}>
         Connect
       </Button>
-      <Errormsg msg={msg} changetheError={(m)=>{setMsg(m)}}/>
+      {/* <Errormsg msg={msg} changetheError={(m)=>{setMsg(m)}}/> */}
     </Flex>
   )
 }

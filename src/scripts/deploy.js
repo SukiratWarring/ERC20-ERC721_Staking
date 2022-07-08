@@ -12,7 +12,7 @@ async function main() {
   erc20_address = erc20.address;
   const Nft = await ethers.getContractFactory("staking_erc_to_nft");
   console.log("HERE")
-  const nft = await upgrades.deployProxy(Nft, [erc20_address], { kind: 'uups' });
+  const nft = await upgrades.deployProxy(Nft, [erc20_address,60], { kind: 'uups' });
   await nft.deployed();
   console.log(`The Staking contract address is ${nft.address}`)
 }
