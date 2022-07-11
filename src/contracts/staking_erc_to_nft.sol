@@ -61,7 +61,7 @@ contract staking_erc_to_nft is
         interval = updateInterval;
         lastTimeStamp = block.timestamp;
 
-        token.mintfortoken(_msgSender(), 1**18);//EDIT this will only mint 1 Warin TOKEN
+        token.mintfortoken(_msgSender(), 10**24);//1 Million supply
 
     }
     
