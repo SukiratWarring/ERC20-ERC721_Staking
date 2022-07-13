@@ -139,7 +139,7 @@ contract staking_erc_to_nft is
     }
 
     //calculating reward
-    function reward_per_person(address _person) public returns (uint256) {
+    function reward_per_person(address _person) public virtual returns (uint256) {
         require(
             hasStaked(_person) == true,
             "User has not staked any thing yet"
@@ -161,7 +161,7 @@ contract staking_erc_to_nft is
     }
 
     //withdraw per person
-    function withdrawReward(address _person) public payable onlyOwner {
+    function withdrawReward(address _person) public virtual payable onlyOwner {
         require(addTOreward[_person] != 0, "Reward not calculated");
         //Burn the nft
         Stake storage rewardOf = addToStake[_person];
